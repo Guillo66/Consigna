@@ -1,0 +1,78 @@
+public class Servicios {
+    // Atributos
+    private int id_servicio;
+    private String nombre_servicio;
+    private String descripcion;
+    private double precio_base;
+    private int duracion_estimada;
+    private String estado;
+
+    // Método constructor
+    public Servicios() {
+        this.id_servicio = 0;
+        this.nombre_servicio = "";
+        this.descripcion = "";
+        this.precio_base = 0.0;
+        this.duracion_estimada = 0;
+        this.estado = "";
+    }
+
+    // Método constructor sobrecargado
+    public Servicios(int id_servicio, String nombre_servicio, String descripcion, double precio_base, int duracion_estimada, String estado) {
+        this.id_servicio = id_servicio;
+        this.nombre_servicio = nombre_servicio;
+        this.descripcion = descripcion;
+        this.precio_base = precio_base;
+        this.duracion_estimada = duracion_estimada;
+        this.estado = estado;
+    }
+
+    // Métodos accesores y mutadores (getters y setters)
+    public int getId_servicio() {
+        return id_servicio;
+    }
+
+    public void setId_servicio(int id_servicio) {
+        this.id_servicio = id_servicio;
+    }
+
+    public String getNombre_servicio() {
+        return nombre_servicio;
+    }
+
+    public void setNombre_servicio(String nombre_servicio) {
+        this.nombre_servicio = nombre_servicio;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public double getPrecio_base() {
+        return precio_base;
+    }
+
+    public void setPrecio_base(double precio_base) {
+        this.precio_base = precio_base;
+    }
+
+    public int getDuracion_estimada() {
+        return duracion_estimada;
+    }
+
+    public void setDuracion_estimada(int duracion_estimada) {
+        this.duracion_estimada = duracion_estimada;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+}
